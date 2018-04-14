@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
@@ -27,6 +28,7 @@ import { LOGIN_ROUTES } from '../login/login.routes';
     imports: [
         SharedModule,
         PAGES_ROUTES,
+        FormsModule,
         LOGIN_ROUTES
     ]
 })
