@@ -13,8 +13,10 @@ import { PAGES_ROUTES } from './pages.routes';
 import { LOGIN_ROUTES } from '../login/login.routes';
 import { IncremetadorComponent } from '../components/incremetador/incremetador.component';
 
-// ng-2 charts
 import { ChartsModule } from 'ng2-charts';
+import { GraficoDonaComponent } from './../components/grafico-dona/grafico-dona.component';
+
+
 
 
 @NgModule({
@@ -23,19 +25,20 @@ import { ChartsModule } from 'ng2-charts';
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
-        IncremetadorComponent
+        IncremetadorComponent,
+        GraficoDonaComponent
     ],
     exports: [
         DashboardComponent,
         Graficas1Component,
-        ProgressComponent,
-        ChartsModule
+        ProgressComponent
     ],
     imports: [
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        LOGIN_ROUTES
+        LOGIN_ROUTES,
+        ChartsModule
     ]
 })
 
