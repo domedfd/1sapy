@@ -14,16 +14,22 @@ import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 
 
+//temporal
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     HttpModule,
     APP_ROUTES,
     PagesModule,
-    LoginModule
+    LoginModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

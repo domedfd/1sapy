@@ -11,6 +11,10 @@ import { NopagefoundComponent } from '../shared/nopagefound/nopagefound.componen
 import { ProgressComponent } from './progress/progress.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { LOGIN_ROUTES } from '../login/login.routes';
+import { IncremetadorComponent } from '../components/incremetador/incremetador.component';
+
+// ng-2 charts
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -18,12 +22,14 @@ import { LOGIN_ROUTES } from '../login/login.routes';
         PagesComponent,
         DashboardComponent,
         Graficas1Component,
-        ProgressComponent
+        ProgressComponent,
+        IncremetadorComponent
     ],
     exports: [
         DashboardComponent,
         Graficas1Component,
-        ProgressComponent
+        ProgressComponent,
+        ChartsModule
     ],
     imports: [
         SharedModule,
