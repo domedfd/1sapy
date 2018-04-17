@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { LoginComponent } from './login.component';
 import { RegisterComponent } from './register.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 
 })

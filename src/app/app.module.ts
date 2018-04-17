@@ -1,3 +1,4 @@
+import { ServiceModule } from './services/service.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -29,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     APP_ROUTES,
     PagesModule,
     LoginModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
