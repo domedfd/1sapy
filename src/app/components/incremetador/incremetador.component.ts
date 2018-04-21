@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, ViewChild, ElementRef } from '@angular/core';
-import { EventEmitter } from '@angular/forms/src/facade/async';
+import { Component, OnInit, Input, Output, ViewChild, ElementRef, EventEmitter } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-incremetador',
@@ -15,14 +16,10 @@ export class IncremetadorComponent implements OnInit {
 
   @Output() cambioValor: EventEmitter<number> = new EventEmitter();
 
-  constructor() { 
-    //console.log('Leyenda', this.leyenda);
-    console.log('progreso', this.progreso);
+  constructor() {
   }
 
   ngOnInit() {
-    //console.log('Leyenda', this.leyenda);
-    console.log('progreso', this.progreso);
   }
   onChange( newValue: number){
 
